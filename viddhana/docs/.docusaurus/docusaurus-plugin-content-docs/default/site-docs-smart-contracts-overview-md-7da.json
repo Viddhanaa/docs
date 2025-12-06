@@ -1,0 +1,31 @@
+{
+  "unversionedId": "smart-contracts/overview",
+  "id": "smart-contracts/overview",
+  "title": "Overview",
+  "description": "VIDDHANA's smart contract architecture is designed for security, upgradability, and composability.",
+  "source": "@site/docs/smart-contracts/overview.md",
+  "sourceDirName": "smart-contracts",
+  "slug": "/smart-contracts/overview",
+  "permalink": "/docs/smart-contracts/overview",
+  "draft": false,
+  "editUrl": "https://github.com/viddhana/docs/edit/main/docs/smart-contracts/overview.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Overview"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Quickstart",
+    "permalink": "/docs/getting-started/quickstart"
+  },
+  "next": {
+    "title": "VDH Token",
+    "permalink": "/docs/smart-contracts/vdh-token"
+  }
+}

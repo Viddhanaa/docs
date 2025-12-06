@@ -1,0 +1,385 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/docs",
+          "tagsPath": "/docs/tags",
+          "editUrl": "https://github.com/viddhana/docs/edit/main/docs",
+          "editUrlLocalized": "https://github.com/viddhana/docs/edit/main/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/realcodes/Viddhana_docx/viddhana/docs/sidebars.js",
+          "contentPath": "/home/realcodes/Viddhana_docx/viddhana/docs/docs",
+          "contentPathLocalized": "/home/realcodes/Viddhana_docx/viddhana/docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "api-reference/json-rpc",
+              "id": "api-reference/json-rpc",
+              "title": "JSON-RPC Methods",
+              "description": "Complete reference for all JSON-RPC methods supported by VIDDHANA.",
+              "source": "@site/docs/api-reference/json-rpc.md",
+              "sourceDirName": "api-reference",
+              "slug": "/api-reference/json-rpc",
+              "permalink": "/docs/api-reference/json-rpc",
+              "draft": false,
+              "editUrl": "https://github.com/viddhana/docs/edit/main/docs/api-reference/json-rpc.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "JSON-RPC Methods"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/api-reference/overview"
+              },
+              "next": {
+                "title": "JavaScript SDK",
+                "permalink": "/docs/sdks/javascript"
+              }
+            },
+            {
+              "unversionedId": "api-reference/overview",
+              "id": "api-reference/overview",
+              "title": "Overview",
+              "description": "VIDDHANA provides a comprehensive JSON-RPC API compatible with Ethereum tooling.",
+              "source": "@site/docs/api-reference/overview.md",
+              "sourceDirName": "api-reference",
+              "slug": "/api-reference/overview",
+              "permalink": "/docs/api-reference/overview",
+              "draft": false,
+              "editUrl": "https://github.com/viddhana/docs/edit/main/docs/api-reference/overview.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "Overview"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "VDH Token",
+                "permalink": "/docs/smart-contracts/vdh-token"
+              },
+              "next": {
+                "title": "JSON-RPC Methods",
+                "permalink": "/docs/api-reference/json-rpc"
+              }
+            },
+            {
+              "unversionedId": "getting-started/installation",
+              "id": "getting-started/installation",
+              "title": "Installation",
+              "description": "Set up your development environment to build on VIDDHANA.",
+              "source": "@site/docs/getting-started/installation.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/installation",
+              "permalink": "/docs/getting-started/installation",
+              "draft": false,
+              "editUrl": "https://github.com/viddhana/docs/edit/main/docs/getting-started/installation.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "Installation"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/intro"
+              },
+              "next": {
+                "title": "Quickstart",
+                "permalink": "/docs/getting-started/quickstart"
+              }
+            },
+            {
+              "unversionedId": "getting-started/quickstart",
+              "id": "getting-started/quickstart",
+              "title": "Quickstart",
+              "description": "Deploy your first smart contract on VIDDHANA in under 5 minutes.",
+              "source": "@site/docs/getting-started/quickstart.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/quickstart",
+              "permalink": "/docs/getting-started/quickstart",
+              "draft": false,
+              "editUrl": "https://github.com/viddhana/docs/edit/main/docs/getting-started/quickstart.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "Quickstart"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/docs/getting-started/installation"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/smart-contracts/overview"
+              }
+            },
+            {
+              "unversionedId": "intro",
+              "id": "intro",
+              "title": "Introduction",
+              "description": "VIDDHANA is The Operating System for Wealth - a next-generation blockchain platform that seamlessly integrates DeFi, AI-powered portfolio management, and real-world asset (RWA) tokenization.",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/intro",
+              "draft": false,
+              "editUrl": "https://github.com/viddhana/docs/edit/main/docs/intro.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "slug": "/intro",
+                "title": "Introduction"
+              },
+              "sidebar": "docsSidebar",
+              "next": {
+                "title": "Installation",
+                "permalink": "/docs/getting-started/installation"
+              }
+            },
+            {
+              "unversionedId": "sdks/javascript",
+              "id": "sdks/javascript",
+              "title": "JavaScript SDK",
+              "description": "The official JavaScript/TypeScript SDK for building on VIDDHANA.",
+              "source": "@site/docs/sdks/javascript.md",
+              "sourceDirName": "sdks",
+              "slug": "/sdks/javascript",
+              "permalink": "/docs/sdks/javascript",
+              "draft": false,
+              "editUrl": "https://github.com/viddhana/docs/edit/main/docs/sdks/javascript.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "JavaScript SDK"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "JSON-RPC Methods",
+                "permalink": "/docs/api-reference/json-rpc"
+              },
+              "next": {
+                "title": "Python SDK",
+                "permalink": "/docs/sdks/python"
+              }
+            },
+            {
+              "unversionedId": "sdks/python",
+              "id": "sdks/python",
+              "title": "Python SDK",
+              "description": "The official Python SDK for building on VIDDHANA.",
+              "source": "@site/docs/sdks/python.md",
+              "sourceDirName": "sdks",
+              "slug": "/sdks/python",
+              "permalink": "/docs/sdks/python",
+              "draft": false,
+              "editUrl": "https://github.com/viddhana/docs/edit/main/docs/sdks/python.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "Python SDK"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "JavaScript SDK",
+                "permalink": "/docs/sdks/javascript"
+              }
+            },
+            {
+              "unversionedId": "smart-contracts/overview",
+              "id": "smart-contracts/overview",
+              "title": "Overview",
+              "description": "VIDDHANA's smart contract architecture is designed for security, upgradability, and composability.",
+              "source": "@site/docs/smart-contracts/overview.md",
+              "sourceDirName": "smart-contracts",
+              "slug": "/smart-contracts/overview",
+              "permalink": "/docs/smart-contracts/overview",
+              "draft": false,
+              "editUrl": "https://github.com/viddhana/docs/edit/main/docs/smart-contracts/overview.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "Overview"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "Quickstart",
+                "permalink": "/docs/getting-started/quickstart"
+              },
+              "next": {
+                "title": "VDH Token",
+                "permalink": "/docs/smart-contracts/vdh-token"
+              }
+            },
+            {
+              "unversionedId": "smart-contracts/vdh-token",
+              "id": "smart-contracts/vdh-token",
+              "title": "VDH Token",
+              "description": "The VDH token is the native utility token of the VIDDHANA ecosystem.",
+              "source": "@site/docs/smart-contracts/vdh-token.md",
+              "sourceDirName": "smart-contracts",
+              "slug": "/smart-contracts/vdh-token",
+              "permalink": "/docs/smart-contracts/vdh-token",
+              "draft": false,
+              "editUrl": "https://github.com/viddhana/docs/edit/main/docs/smart-contracts/vdh-token.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "VDH Token"
+              },
+              "sidebar": "docsSidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/smart-contracts/overview"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/api-reference/overview"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "docsSidebar": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Getting Started",
+                "collapsed": false,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "getting-started/installation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/quickstart"
+                  }
+                ],
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Smart Contracts",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "smart-contracts/overview"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "smart-contracts/vdh-token"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "API Reference",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api-reference/overview"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api-reference/json-rpc"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "SDKs",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "sdks/javascript"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "sdks/python"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.tsx"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

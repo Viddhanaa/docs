@@ -1,0 +1,31 @@
+{
+  "unversionedId": "smart-contracts/vdh-token",
+  "id": "smart-contracts/vdh-token",
+  "title": "VDH Token",
+  "description": "The VDH token is the native utility token of the VIDDHANA ecosystem.",
+  "source": "@site/docs/smart-contracts/vdh-token.md",
+  "sourceDirName": "smart-contracts",
+  "slug": "/smart-contracts/vdh-token",
+  "permalink": "/docs/smart-contracts/vdh-token",
+  "draft": false,
+  "editUrl": "https://github.com/viddhana/docs/edit/main/docs/smart-contracts/vdh-token.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "VDH Token"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/smart-contracts/overview"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/api-reference/overview"
+  }
+}

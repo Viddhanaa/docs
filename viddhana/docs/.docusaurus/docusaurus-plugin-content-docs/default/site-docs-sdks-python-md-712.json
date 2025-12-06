@@ -1,0 +1,27 @@
+{
+  "unversionedId": "sdks/python",
+  "id": "sdks/python",
+  "title": "Python SDK",
+  "description": "The official Python SDK for building on VIDDHANA.",
+  "source": "@site/docs/sdks/python.md",
+  "sourceDirName": "sdks",
+  "slug": "/sdks/python",
+  "permalink": "/docs/sdks/python",
+  "draft": false,
+  "editUrl": "https://github.com/viddhana/docs/edit/main/docs/sdks/python.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Python SDK"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "JavaScript SDK",
+    "permalink": "/docs/sdks/javascript"
+  }
+}

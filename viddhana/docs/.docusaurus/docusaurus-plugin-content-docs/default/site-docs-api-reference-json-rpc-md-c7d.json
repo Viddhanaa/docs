@@ -1,0 +1,31 @@
+{
+  "unversionedId": "api-reference/json-rpc",
+  "id": "api-reference/json-rpc",
+  "title": "JSON-RPC Methods",
+  "description": "Complete reference for all JSON-RPC methods supported by VIDDHANA.",
+  "source": "@site/docs/api-reference/json-rpc.md",
+  "sourceDirName": "api-reference",
+  "slug": "/api-reference/json-rpc",
+  "permalink": "/docs/api-reference/json-rpc",
+  "draft": false,
+  "editUrl": "https://github.com/viddhana/docs/edit/main/docs/api-reference/json-rpc.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "JSON-RPC Methods"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/api-reference/overview"
+  },
+  "next": {
+    "title": "JavaScript SDK",
+    "permalink": "/docs/sdks/javascript"
+  }
+}

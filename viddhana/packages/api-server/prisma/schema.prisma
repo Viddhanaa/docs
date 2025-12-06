@@ -1,0 +1,338 @@
+// VIDDHANA API Server Database Schema
+// Prisma ORM configuration for PostgreSQL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================================
+// User & Authentication
+// ============================================================================
+
+model User {
+  id            String    @id @default(cuid())
+  address       String    @unique // Ethereum address
+  email         String?   @unique
+  username      String?   @unique
+  tier          String    @default("free") // free, basic, pro, enterprise
+  
+  // Relations
+  apiKeys       ApiKey[]
+  vaults        Vault[]
+  
+  // Timestamps
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  @@index([address])
+  @@map("users")
+}
+
+model ApiKey {
+  id            String    @id @default(cuid())
+  key           String    @unique
+  userId        String
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  tier          String    @default("free") // Matches user tier by default
+  permissions   String[]  @default([])
+  
+  revoked       Boolean   @default(false)
+  expiresAt     DateTime?
+  lastUsedAt    DateTime?
+  
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  @@index([key])
+  @@index([userId])
+  @@map("api_keys")
+}
+
+// ============================================================================
+// Vault Management
+// ============================================================================
+
+model Vault {
+  id              String    @id @default(cuid())
+  userId          String
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  name            String
+  contractAddress String?   // On-chain vault address
+  totalValue      String    @default("0")
+  currency        String    @default("USD")
+  
+  // Configuration
+  riskTolerance   Int       @default(5000) // Basis points (0-10000)
+  timeToGoal      Int       @default(24)   // Months
+  autoRebalance   Boolean   @default(true)
+  
+  // Relations
+  assets          VaultAsset[]
+  transactions    VaultTransaction[]
+  rebalances      RebalanceHistory[]
+  
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  
+  @@index([userId])
+  @@index([contractAddress])
+  @@map("vaults")
+}
+
+model VaultAsset {
+  id            String    @id @default(cuid())
+  vaultId       String
+  vault         Vault     @relation(fields: [vaultId], references: [id], onDelete: Cascade)
+  
+  symbol        String
+  address       String    // Token contract address
+  balance       String
+  value         String
+  allocation    Float     // Percentage (0-100)
+  
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  @@unique([vaultId, address])
+  @@index([vaultId])
+  @@map("vault_assets")
+}
+
+model VaultTransaction {
+  id            String    @id @default(cuid())
+  vaultId       String
+  vault         Vault     @relation(fields: [vaultId], references: [id], onDelete: Cascade)
+  
+  type          String    // DEPOSIT, WITHDRAW, REBALANCE
+  asset         String
+  amount        String
+  txHash        String?
+  status        String    @default("PENDING") // PENDING, CONFIRMED, FAILED
+  
+  createdAt     DateTime  @default(now())
+  confirmedAt   DateTime?
+  
+  @@index([vaultId])
+  @@index([txHash])
+  @@index([status])
+  @@map("vault_transactions")
+}
+
+model RebalanceHistory {
+  id            String    @id @default(cuid())
+  vaultId       String
+  vault         Vault     @relation(fields: [vaultId], references: [id], onDelete: Cascade)
+  
+  txHash        String?
+  blockNumber   Int?
+  reason        String    // AI-driven reason
+  actions       Json      // Array of rebalance actions
+  aiConfidence  Float
+  gasUsed       Int?
+  gasCost       String?
+  
+  createdAt     DateTime  @default(now())
+  
+  @@index([vaultId])
+  @@index([txHash])
+  @@map("rebalance_history")
+}
+
+// ============================================================================
+// Blockchain Data (Indexed)
+// ============================================================================
+
+model Transaction {
+  id            String    @id @default(cuid())
+  hash          String    @unique
+  blockNumber   Int
+  blockHash     String
+  
+  from          String
+  to            String?
+  value         String
+  gasPrice      String
+  gasUsed       Int?
+  
+  input         String?   @db.Text
+  status        Int       @default(1) // 0 = failed, 1 = success
+  
+  timestamp     DateTime
+  createdAt     DateTime  @default(now())
+  
+  @@index([blockNumber])
+  @@index([from])
+  @@index([to])
+  @@index([timestamp])
+  @@map("transactions")
+}
+
+model Block {
+  id            String    @id @default(cuid())
+  number        Int       @unique
+  hash          String    @unique
+  parentHash    String
+  
+  timestamp     DateTime
+  gasLimit      String
+  gasUsed       String
+  
+  transactionCount Int
+  
+  createdAt     DateTime  @default(now())
+  
+  @@index([number])
+  @@index([timestamp])
+  @@map("blocks")
+}
+
+// ============================================================================
+// DePIN Sensors
+// ============================================================================
+
+model Sensor {
+  id            String    @id @default(cuid())
+  sensorId      String    @unique // External sensor ID
+  owner         String    // Owner wallet address
+  
+  deviceType    String    // solar_panel, wind_turbine, etc.
+  status        String    @default("active") // active, inactive, maintenance
+  
+  location      Json?     // { lat: number, lng: number }
+  metadata      Json?     // Device-specific metadata
+  
+  // Performance metrics
+  uptimePercent     Float   @default(0)
+  dataQualityScore  Float   @default(0)
+  dailyRate         String  @default("0")
+  errorCount        Int     @default(0)
+  
+  // Rewards
+  pendingRewards    String  @default("0")
+  claimedRewards    String  @default("0")
+  lifetimeRewards   String  @default("0")
+  
+  lastDataPoint     DateTime?
+  registeredAt      DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  
+  @@index([sensorId])
+  @@index([owner])
+  @@index([deviceType])
+  @@index([status])
+  @@map("sensors")
+}
+
+model SensorData {
+  id            String    @id @default(cuid())
+  sensorId      String
+  
+  dataType      String    // energy_output, temperature, etc.
+  value         Float
+  unit          String
+  
+  timestamp     DateTime
+  createdAt     DateTime  @default(now())
+  
+  @@index([sensorId])
+  @@index([timestamp])
+  @@index([dataType])
+  @@map("sensor_data")
+}
+
+// ============================================================================
+// Price Data & Predictions
+// ============================================================================
+
+model PriceData {
+  id            String    @id @default(cuid())
+  asset         String
+  price         Float
+  volume24h     Float?
+  marketCap     Float?
+  change24h     Float?
+  
+  timestamp     DateTime
+  source        String    @default("aggregated")
+  
+  createdAt     DateTime  @default(now())
+  
+  @@unique([asset, timestamp])
+  @@index([asset])
+  @@index([timestamp])
+  @@map("price_data")
+}
+
+model Prediction {
+  id              String    @id @default(cuid())
+  asset           String
+  horizon         Int       // Days ahead
+  
+  predictions     Json      // Array of { day, price, confidence }
+  trend           String    // bullish, bearish, neutral
+  volatilityForecast Float
+  
+  modelVersion    String
+  generatedAt     DateTime
+  
+  createdAt       DateTime  @default(now())
+  
+  @@index([asset])
+  @@index([generatedAt])
+  @@map("predictions")
+}
+
+// ============================================================================
+// Analytics & Logging
+// ============================================================================
+
+model ApiLog {
+  id            String    @id @default(cuid())
+  
+  method        String    // RPC method or REST endpoint
+  requestId     String?
+  apiKeyId      String?
+  userId        String?
+  
+  requestBody   Json?
+  responseCode  Int
+  responseTime  Int       // Milliseconds
+  
+  ip            String?
+  userAgent     String?
+  
+  createdAt     DateTime  @default(now())
+  
+  @@index([method])
+  @@index([apiKeyId])
+  @@index([userId])
+  @@index([createdAt])
+  @@map("api_logs")
+}
+
+model RateLimitLog {
+  id            String    @id @default(cuid())
+  
+  key           String    // Rate limit key (api:xxx or ip:xxx)
+  tier          String
+  endpoint      String?
+  
+  requestCount  Int
+  limitExceeded Boolean   @default(false)
+  
+  windowStart   DateTime
+  windowEnd     DateTime
+  
+  createdAt     DateTime  @default(now())
+  
+  @@index([key])
+  @@index([windowStart])
+  @@map("rate_limit_logs")
+}

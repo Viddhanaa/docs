@@ -1,0 +1,31 @@
+{
+  "unversionedId": "sdks/javascript",
+  "id": "sdks/javascript",
+  "title": "JavaScript SDK",
+  "description": "The official JavaScript/TypeScript SDK for building on VIDDHANA.",
+  "source": "@site/docs/sdks/javascript.md",
+  "sourceDirName": "sdks",
+  "slug": "/sdks/javascript",
+  "permalink": "/docs/sdks/javascript",
+  "draft": false,
+  "editUrl": "https://github.com/viddhana/docs/edit/main/docs/sdks/javascript.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "formattedLastUpdatedAt": "Oct 14, 2018",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "JavaScript SDK"
+  },
+  "sidebar": "docsSidebar",
+  "previous": {
+    "title": "JSON-RPC Methods",
+    "permalink": "/docs/api-reference/json-rpc"
+  },
+  "next": {
+    "title": "Python SDK",
+    "permalink": "/docs/sdks/python"
+  }
+}

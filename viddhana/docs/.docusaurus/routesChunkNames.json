@@ -1,0 +1,95 @@
+{
+  "/__docusaurus/debug-872": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-665-f7d"
+    }
+  },
+  "/__docusaurus/debug/config-1fc": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-665-f7d"
+    }
+  },
+  "/__docusaurus/debug/content-244": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-665-f7d"
+    },
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-263": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-665-f7d"
+    }
+  },
+  "/__docusaurus/debug/metadata-135": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-665-f7d"
+    }
+  },
+  "/__docusaurus/debug/registry-a8e": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-665-f7d"
+    }
+  },
+  "/__docusaurus/debug/routes-ebc": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-665-f7d"
+    }
+  },
+  "/docs-77e": {
+    "__comp": "__comp---theme-doc-page-1-be-9be",
+    "__context": {
+      "plugin": "plugin---docsb-41-48f"
+    },
+    "versionMetadata": "versionMetadata---docs-935-398"
+  },
+  "/docs/api-reference/json-rpc-145": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-api-reference-json-rpcc-7-d-0b0"
+  },
+  "/docs/api-reference/overview-224": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-api-reference-overviewce-8-2fb"
+  },
+  "/docs/getting-started/installation-381": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-getting-started-installation-54-f-18d"
+  },
+  "/docs/getting-started/quickstart-ec5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-getting-started-quickstartfbd-5fc"
+  },
+  "/docs/intro-f79": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
+  },
+  "/docs/sdks/javascript-565": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-sdks-javascriptf-69-5ab"
+  },
+  "/docs/sdks/python-b92": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-sdks-python-712-745"
+  },
+  "/docs/smart-contracts/overview-68f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-smart-contracts-overview-7-da-cad"
+  },
+  "/docs/smart-contracts/vdh-token-3fb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-smart-contracts-vdh-token-765-4dc"
+  },
+  "/-642": {
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__context": {
+      "plugin": "plugin---dd-6-18b"
+    },
+    "config": "config---5-e-9-4f3"
+  }
+}

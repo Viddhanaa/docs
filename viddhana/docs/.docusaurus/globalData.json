@@ -1,0 +1,73 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "api-reference/json-rpc",
+              "path": "/docs/api-reference/json-rpc",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "api-reference/overview",
+              "path": "/docs/api-reference/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/installation",
+              "path": "/docs/getting-started/installation",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "getting-started/quickstart",
+              "path": "/docs/getting-started/quickstart",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "sdks/javascript",
+              "path": "/docs/sdks/javascript",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "sdks/python",
+              "path": "/docs/sdks/python",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "smart-contracts/overview",
+              "path": "/docs/smart-contracts/overview",
+              "sidebar": "docsSidebar"
+            },
+            {
+              "id": "smart-contracts/vdh-token",
+              "path": "/docs/smart-contracts/vdh-token",
+              "sidebar": "docsSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docsSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
