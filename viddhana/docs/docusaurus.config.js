@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'VIDDHANA Developer Hub',
   tagline: 'Build on VIDDHANA: The Operating System for Wealth',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png',
 
   url: 'https://docs.viddhana.com',
   baseUrl: '/',
@@ -65,8 +65,11 @@ const config = {
         title: 'VIDDHANA',
         logo: {
           alt: 'VIDDHANA Logo',
-          src: 'img/logo.svg',
-          srcDark: 'img/logo.svg',
+          src: 'img/logo.png',
+          srcDark: 'img/logo.png',
+          height: 32,
+          width: 32,
+          style: { borderRadius: '4px' },
         },
         items: [
           {
