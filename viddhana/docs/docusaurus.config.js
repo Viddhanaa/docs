@@ -8,7 +8,7 @@ const config = {
   tagline: 'Build on VIDDHANA: The Operating System for Wealth',
   favicon: 'img/favicon.ico',
 
-  url: 'https://docs.viddhana.network',
+  url: 'https://docs.viddhana.com',
   baseUrl: '/',
 
   organizationName: 'viddhana',
@@ -121,8 +121,7 @@ const config = {
             title: 'Resources',
             items: [
               { label: 'GitHub', href: 'https://github.com/viddhana' },
-              { label: 'Whitepaper', href: '/files/whitepaper.pdf' },
-              { label: 'Brand Assets', href: '/brand' },
+              { label: 'Whitepaper', href: 'https://viddhana.com/whitepaper.pdf' },
             ],
           },
         ],

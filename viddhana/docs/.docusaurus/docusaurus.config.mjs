@@ -7,7 +7,7 @@ export default {
   "title": "VIDDHANA Developer Hub",
   "tagline": "Build on VIDDHANA: The Operating System for Wealth",
   "favicon": "img/favicon.ico",
-  "url": "https://docs.viddhana.network",
+  "url": "https://docs.viddhana.com",
   "baseUrl": "/",
   "organizationName": "viddhana",
   "projectName": "docs",
@@ -136,11 +136,7 @@ export default {
             },
             {
               "label": "Whitepaper",
-              "href": "/files/whitepaper.pdf"
-            },
-            {
-              "label": "Brand Assets",
-              "href": "/brand"
+              "href": "https://viddhana.com/whitepaper.pdf"
             }
           ]
         }
